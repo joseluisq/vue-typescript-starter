@@ -9,7 +9,7 @@
 - [x] [Typescript](https://github.com/Microsoft/TypeScript) `2.4.x` with [vue-class-component](https://github.com/vuejs/vue-class-component).
 - [x] [Webpack Code Spliting](https://webpack.js.org/guides/code-splitting/).
 - [x] [Webpack Dashboard](https://github.com/FormidableLabs/webpack-dashboard) for development.
-- [x] [Webpack Bunvue-class-componentdle Analyzer](https://github.com/th0r/webpack-bundle-analyzer) for production.
+- [x] [Webpack Bundle Analyzer](https://github.com/th0r/webpack-bundle-analyzer) for production.
 - [x] [PostCSS](https://github.com/postcss/postcss-loader) with [Autoprefixer](https://github.com/postcss/autoprefixer).
 
 [Node 6](https://nodejs.org/en/) or later is required.
