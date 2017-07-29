@@ -1,6 +1,7 @@
 {
   "name": "vue-typescript-starter",
   "private": true,
+  "license": "MIT",
   "description": "Small Vue 2 + Typescript boilerplate.",
   "repository": "joseluisq/vue-typescript-starter",
   "author": {
