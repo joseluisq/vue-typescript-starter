@@ -11,7 +11,15 @@
   "engines": {
     "node": ">= 6.0"
   },
+  "peerDependencies": {
+    "apollo-client": "^1.9.0-1"
+  },
   "dependencies": {
+    "apollo-client": "^1.9.0-1",
+    "bulma": "^0.5.0",
+    "date-fns": "^1.28.5",
+    "graphql-tag": "^2.4.2",
+    "subscriptions-transport-ws": "^0.8.2",
     "vue": "^2.4.2",
     "vue-class-component": "^5.0.2",
     "vue-router": "^2.7.0"
@@ -41,7 +49,8 @@
   },
   "scripts": {
     "start": "npm run dev",
-    "dev": "NODE_ENV=development webpack-dashboard -t 'react-minimal-boilerplate' -- webpack-dev-server --config webpack.config.dev.js",
+    "devdash": "NODE_ENV=development webpack-dashboard -t 'vue-typescript-starter' -- webpack-dev-server --config webpack.config.dev.js",
+    "dev": "webpack-dev-server --config webpack.config.dev.js",
     "build": "npm run clean && npm run prod",
     "clean": "rm -rf ./dist",
     "prod": "NODE_ENV=production webpack --progress --config webpack.config.prod.js"

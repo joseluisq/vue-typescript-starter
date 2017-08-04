@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const DashboardPlugin = require('webpack-dashboard/plugin')
 
-const port = process.env.APP_PORT || 8080
+const port = process.env.APP_PORT || 4044
 const dist = resolve(__dirname, 'dist')
 const src = resolve(__dirname, 'src')
 
