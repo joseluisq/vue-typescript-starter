@@ -1,18 +1,19 @@
+/**
+ * Vue Apollo Plugin
+ * Exposes the "Apollo Client" to use it into Vue components via "$apollo" prop.
+ */
+
 import { ApolloClient } from 'apollo-client'
 import Vue, { PluginObject, PluginFunction } from 'vue'
-
-// export const addGraphQLSubscriptions: {}
 
 interface Options {
   apolloClient: ApolloClient
 }
 
-class VueApollo implements PluginObject<{}> {
+class VueApolloPlugin implements PluginObject<{}> {
   [key: string]: any
   install: PluginFunction<{}>
   _apollo: ApolloClient
-
-  constructor(options: Options) {}
 
   static install(pVue: typeof Vue, options: Options): void {
     Object.defineProperty(Vue.prototype, '$apollo', {
@@ -23,4 +24,4 @@ class VueApollo implements PluginObject<{}> {
   }
 }
 
-export default VueApollo
+export default VueApolloPlugin

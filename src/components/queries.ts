@@ -1,6 +1,10 @@
+/**
+ * GraphQL query definitions.
+ */
+
 import gql from 'graphql-tag'
 
-const posts = gql`
+const posts: {} = gql`
   {
     posts {
       id
@@ -17,19 +21,13 @@ const posts = gql`
   }
 `
 
-const authors = gql`
+const authors: {} = gql`
   {
-    posts {
+    authors {
       id
-      title
-      votes
+      firstName
+      lastName
       createdAt
-      author {
-        id
-        firstName
-        lastName
-        createdAt
-      }
     }
   }
 `

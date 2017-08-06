@@ -1,6 +1,9 @@
 # vue-typescript-starter
 
-> Small [Vue 2](https://github.com/vuejs/vue) + [Typescript](https://github.com/Microsoft/TypeScript) boilerplate.
+> [Vue 2](https://github.com/vuejs/vue) & [Typescript](https://github.com/Microsoft/TypeScript) frontend starter.
+
+__Note:__ This frontend source works with [Koa-GraphQL-RethinkDB](https://github.com/joseluisq/koa-graphql-rethinkdb) (GraphQL Server API).
+If you want not to work with GraphQL feel free to customize it.
 
 ## Features
 
@@ -11,6 +14,7 @@
 - [x] [Webpack Dashboard](https://github.com/FormidableLabs/webpack-dashboard) for development.
 - [x] [Webpack Bundle Analyzer](https://github.com/th0r/webpack-bundle-analyzer) for production.
 - [x] [PostCSS](https://github.com/postcss/postcss-loader) with [Autoprefixer](https://github.com/postcss/autoprefixer).
+- [x] [Apollo GraphQL Client](https://github.com/apollographql/apollo-client) (optional).
 
 [Node 6](https://nodejs.org/en/) or later is required.
 

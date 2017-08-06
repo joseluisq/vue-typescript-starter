@@ -17,6 +17,10 @@
             </tr>
           </thead>
           <tbody>
+            <tr v-if="!posts">
+              <td colspan="5" class="has-text-centered">Not found results.</td>
+            </tr>
+
             <tr v-if="posts" v-for="post in posts">
               <td>{{shortCode(post.id)}}</td>
               <td>{{post.title}}</td>
@@ -36,13 +40,14 @@
 <script lang="ts">
 import Vue from 'vue'
 import Component from 'vue-class-component'
+
 import format from 'date-fns/format'
 import q from './queries'
 
-@Component({})
+@Component
 export default class App extends Vue {
   $apollo: any
-  posts: any
+  posts: [{}]
 
   data() {
     return {
@@ -51,23 +56,21 @@ export default class App extends Vue {
   }
 
   mounted() {
-    // Get posts
+    // Get some "Posts" from the GraphQL Server
     this.$apollo
       .query({ query: q.posts })
       .then(({ data }) => {
-        if (data && data.posts) {
-          this.posts = data.posts
-        }
+        if (data && data.posts) this.posts = data.posts
       })
       .catch(error => console.error())
   }
 
-  shortCode(code: string = '') {
+  shortCode(code: string = ''): string {
     return code.substr(0, 8)
   }
 
-  formatDate(date: string) {
-    return format(date, 'DD/MM/YYYY HH:mm:ss')
+  formatDate(strDatetime: string): string {
+    return strDatetime ? format(strDatetime, 'DD/MM/YYYY HH:mm:ss') : ''
   }
 }
 </script>

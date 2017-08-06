@@ -9,11 +9,8 @@
     "noImplicitAny": false,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "lib": [
-      "dom",
-      "es5",
-      "es2015.promise",
-      "es2015.iterable"
-    ]
-  }
+    "types": ["vue-typescript-import-dts"],
+    "lib": ["dom", "es5", "es2015.promise", "es2015.iterable"]
+  },
+  "include": ["./src/**/*"]
 }
