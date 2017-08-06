@@ -2,8 +2,8 @@
 
 > [Vue 2](https://github.com/vuejs/vue) & [Typescript](https://github.com/Microsoft/TypeScript) frontend starter.
 
-__Note:__ This frontend source works with [Koa-GraphQL-RethinkDB](https://github.com/joseluisq/koa-graphql-rethinkdb) (GraphQL Server API).
-If you want not to work with GraphQL feel free to customize it.
+_**Note:** This frontend source works with [Koa-GraphQL-RethinkDB](https://github.com/joseluisq/koa-graphql-rethinkdb) (GraphQL Server API).
+If you want not to work with GraphQL feel free to customize it._
 
 ## Features
 
