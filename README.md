@@ -1,8 +1,8 @@
 # vue-typescript-starter
 
-> [Vue 2](https://github.com/vuejs/vue) & [Typescript](https://github.com/Microsoft/TypeScript) frontend starter.
+> Tiny [Vue 2](https://github.com/vuejs/vue) & [Typescript](https://github.com/Microsoft/TypeScript) frontend starter. :rocket:
 
-_**Note:** This frontend source works with [Koa-GraphQL-RethinkDB](https://github.com/joseluisq/koa-graphql-rethinkdb) (GraphQL Server API).
+_**Note:** This frontend example works with [Koa-GraphQL-RethinkDB](https://github.com/joseluisq/koa-graphql-rethinkdb) (GraphQL API Server).
 If you want not to work with GraphQL feel free to customize it._
 
 ## Features
