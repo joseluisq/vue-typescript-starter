@@ -4,7 +4,7 @@
 
 import gql from 'graphql-tag'
 
-const posts: {} = gql`
+const posts: object = gql`
   {
     posts {
       id
@@ -21,7 +21,7 @@ const posts: {} = gql`
   }
 `
 
-const authors: {} = gql`
+const authors: object = gql`
   {
     authors {
       id

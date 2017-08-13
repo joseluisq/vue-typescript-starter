@@ -15,10 +15,9 @@ const apolloClient = new ApolloClient({
 })
 
 // Apollo Client: Expose the Apollo Client into Vue components
-Vue.use(VueApollo, {
-  apolloClient: apolloClient
-})
+Vue.use(VueApollo, { apolloClient: apolloClient })
 
+// tslint:disable-next-line
 new Vue({
   el: '#app',
   render: h => h(App)

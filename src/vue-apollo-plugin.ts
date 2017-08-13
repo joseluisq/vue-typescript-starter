@@ -12,13 +12,13 @@ interface Options {
 
 class VueApolloPlugin implements PluginObject<{}> {
   [key: string]: any
-  install: PluginFunction<{}>
-  _apollo: ApolloClient
 
-  static install(pVue: typeof Vue, options: Options): void {
-    Object.defineProperty(Vue.prototype, '$apollo', {
+  public install: PluginFunction<{}>
+
+  public static install(pVue: typeof Vue, options: Options): void {
+    Object.defineProperty(pVue.prototype, '$apollo', {
       get() {
-        return this._apollo || options.apolloClient
+        return options.apolloClient
       }
     })
   }

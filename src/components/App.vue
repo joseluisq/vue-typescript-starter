@@ -49,20 +49,20 @@ export default class App extends Vue {
   $apollo: any
   posts: [{}]
 
-  data() {
+  data(): object {
     return {
       posts: []
     }
   }
 
-  mounted() {
+  mounted(): void {
     // Get some "Posts" from the GraphQL Server
     this.$apollo
       .query({ query: q.posts })
-      .then(({ data }) => {
+      .then(({ data }: any) => {
         if (data && data.posts) this.posts = data.posts
       })
-      .catch(error => console.error())
+      .catch((error: Error) => console.error(error))
   }
 
   shortCode(code: string = ''): string {

@@ -1,16 +1,22 @@
 {
+  "include": ["src"],
   "compilerOptions": {
-    "outDir": "./built/",
+    "outDir": "dist",
     "sourceMap": true,
     "strict": true,
     "module": "es2015",
     "moduleResolution": "node",
     "target": "es5",
-    "noImplicitAny": false,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "types": ["vue-typescript-import-dts"],
     "lib": ["dom", "es5", "es2015.promise", "es2015.iterable"]
   },
-  "include": ["./src/**/*"]
+  "exclude": ["node_modules", "dist"]
 }

@@ -1,6 +1,6 @@
 {
-  "name": "My Boilerplate PWA",
-  "short_name": "My Boilerplate PWA",
+  "name": "Vue 2 &amp; Typescript starter",
+  "short_name": "Vue 2 &amp; Typescript starter",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
