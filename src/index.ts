@@ -3,7 +3,7 @@ import App from './components/App.vue'
 
 // Apollo Client: Required imports
 import ApolloClient, { createNetworkInterface } from 'apollo-client'
-import VueApollo from './vue-apollo-plugin'
+import VueApollo from './plugins/vue-apollo-plugin'
 
 // Apollo Client: GraphQL Server API configuration
 const apolloClient = new ApolloClient({
